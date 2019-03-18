@@ -15,7 +15,7 @@ app: MultiTimer. MultiTimer allows users to start multiple one-second timers.
 Start as many timers as you need! Each timer is a single component and keeps
 track of its own time using state.
 
-Go on and run the app with `npm start`. The app is already partially working,
+Go on and run the app with `npm start`. Tnpm 
 but there are some changes we need to make. By clicking 'Add Timer', timers will
 get added to the page, but stay a `0`.
 
