@@ -20,13 +20,22 @@ class Timer extends Component {
     );
   }
 
-  //clock functions
+  componentDidMount() { // when the component is mounted, update the state of the clock every second
+    this.interval = setInterval(this.clockTick, 1000) 
+  }
+  
+  componentWillMount() {
+    this.stopClock()
+  }
+
+  // update the state of the clock component and increment the time value
   clockTick = () => {
     this.setState(prevState => ({
       time: prevState.time + 1
     }));
   };
 
+  // clear the interval
   stopClock = () => {
     clearInterval(this.interval);
   };

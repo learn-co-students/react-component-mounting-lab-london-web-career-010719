@@ -15,13 +15,6 @@ class App extends Component {
 
 
 
-
-
-
-
-
-  // No need to modify anything in render or the class methods below
-  // Unless, of course, you're curious about how it all works
   render() {
 
     return (
@@ -35,6 +28,10 @@ class App extends Component {
 
       </div>
     );
+  }
+
+  componentDidMount() {
+    this.handleAddTimer()
   }
 
   // returns array of components written in JSX, mapped from this.state.timerIDs
